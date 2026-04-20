@@ -11,7 +11,7 @@ MARKETPLACE_REPO="rockstarr-marketplace"
 # The PRIVATE repo holding clients.json and plugins.json (names, state).
 REGISTRY_REPO="rockstarr-marketplace-registry"
 
-# The repo whose GitHub Releases host the .plugin binaries.
+# The repo whose GitHub Releases host the plugin .zip binaries.
 PLUGINS_REPO="rockstarr-plugins"
 
 # Base URL served by GitHub's raw CDN. Clients paste

@@ -14,7 +14,7 @@ registry repo.
 ```
 github.com/rockstarrmoon/rockstarr-marketplace           ← public, this repo
 github.com/rockstarrmoon/rockstarr-marketplace-registry  ← PRIVATE, source of truth
-github.com/rockstarrmoon/rockstarr-plugins               ← public, holds .plugin release assets
+github.com/rockstarrmoon/rockstarr-plugins               ← public, holds .zip release assets
 ```
 
 The admin scripts in `/scripts/` live here for convenience (they contain no
@@ -33,7 +33,7 @@ laptop and write to both repos atomically per operation.
         │
         ▼  the manifest points at:
  ┌───────────────────────────┐
- │ GitHub Releases           │ https://github.com/rockstarrmoon/rockstarr-plugins/releases/download/<tag>/<file>.plugin
+ │ GitHub Releases           │ https://github.com/rockstarrmoon/rockstarr-plugins/releases/download/<tag>/<file>.zip
  │ (in rockstarr-plugins)    │
  └───────────────────────────┘
 ```

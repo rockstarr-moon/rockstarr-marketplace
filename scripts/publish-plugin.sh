@@ -2,13 +2,13 @@
 # publish-plugin.sh — cut a new plugin release and bump every active client.
 #
 # Three steps in order:
-#   1. `gh release create` in rockstarr-plugins, attaching the .plugin file.
+#   1. `gh release create` in rockstarr-plugins, attaching the .zip file.
 #   2. Updates plugins.json in the PRIVATE registry repo.
 #   3. Regenerates every client's manifest in the PUBLIC repo. Pinned clients
 #      stay put; everyone else moves to the new version.
 #
 # Usage:
-#   scripts/publish-plugin.sh <name> <version> <path/to/file.plugin> "<description>"
+#   scripts/publish-plugin.sh <name> <version> <path/to/file.zip> "<description>"
 #
 # Flags:
 #   --no-push    Commit locally but do not push. (The GitHub release is still
@@ -22,7 +22,7 @@ set -- "${GLOBAL_ARGS[@]:-}"
 
 if [[ $# -lt 4 ]]; then
   cat >&2 <<EOF
-Usage: $0 <name> <version> <path/to/file.plugin> "<description>" [--no-push]
+Usage: $0 <name> <version> <path/to/file.zip> "<description>" [--no-push]
 EOF
   exit 2
 fi
@@ -42,7 +42,7 @@ fi
 EXISTING_PLUGIN="$(read_plugin "$PLUGIN_NAME")"
 if [[ -z "$EXISTING_PLUGIN" ]]; then
   TAG_PREFIX="${PLUGIN_NAME}-v"
-  ARTIFACT_FILENAME="${PLUGIN_NAME}.plugin"
+  ARTIFACT_FILENAME="${PLUGIN_NAME}.zip"
   NEW_PLUGINS="$(jq \
     --arg name "$PLUGIN_NAME" \
     --arg desc "$DESCRIPTION" \

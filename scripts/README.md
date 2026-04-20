@@ -56,13 +56,13 @@ scripts/create-client.sh rockstarr-ai-pilot "Rockstarr AI — Pilot" rockstarr-i
 ## `publish-plugin.sh`
 
 ```bash
-scripts/publish-plugin.sh <name> <version> <path/to/file.plugin> "<description>"
+scripts/publish-plugin.sh <name> <version> <path/to/file.zip> "<description>"
 ```
 
 Three steps:
 
 1. `gh release create` in `rockstarrmoon/rockstarr-plugins`, uploading the
-   `.plugin` file under its canonical filename and tagging `<name>-v<version>`.
+   `.zip` file under its canonical filename and tagging `<name>-v<version>`.
 2. Updates `plugins.json` in the registry — registers the plugin if new,
    otherwise bumps `current_version` and appends to `versions[]`.
 3. Regenerates **every** client manifest in the public repo. Pinned clients
@@ -72,7 +72,7 @@ Three steps:
 
 ```bash
 scripts/publish-plugin.sh rockstarr-infra 0.4.11 \
-  ./rockstarr-infra-0.4.11.plugin \
+  ./rockstarr-infra-0.4.11.zip \
   "Scaffolds the client folder, ingests the workbook, and generates the style guide."
 ```
 

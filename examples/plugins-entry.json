@@ -6,6 +6,6 @@
     "versions": ["0.4.11"],
     "release_repo": "rockstarrmoon/rockstarr-plugins",
     "release_tag_prefix": "rockstarr-infra-v",
-    "artifact_filename": "rockstarr-infra.plugin"
+    "artifact_filename": "rockstarr-infra.zip"
   }
 }

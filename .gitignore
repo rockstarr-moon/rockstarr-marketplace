@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local backups
+backups/
+*.bak
+
+# Secrets / tokens that should never land in the repo
+.env
+.env.local
+*.pem
+*.key
+
+# Local build scratch
+dist/
+tmp/

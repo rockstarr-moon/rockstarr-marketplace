@@ -1,0 +1,11 @@
+{
+  "_comment": "Shape of a single entry inside registry/plugins.json under the plugins object, keyed by plugin name.",
+  "rockstarr-infra": {
+    "description": "Scaffolds the client folder, ingests the workbook, generates the style guide, and runs knowledge base ingestion.",
+    "current_version": "0.4.11",
+    "versions": ["0.4.11"],
+    "release_repo": "rockstarrmoon/rockstarr-plugins",
+    "release_tag_prefix": "rockstarr-infra-v",
+    "artifact_filename": "rockstarr-infra.plugin"
+  }
+}

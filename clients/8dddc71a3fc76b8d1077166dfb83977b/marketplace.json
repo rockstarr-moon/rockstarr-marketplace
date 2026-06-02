@@ -15,11 +15,11 @@
     },
     {
       "name": "rockstarr-content",
-      "description": "Rockstarr AI long-form content drafting plugin. Four publishing lanes (researched blog, thought leadership, email newsletter, LinkedIn newsletter) gated by the client's stack cadence, plus interview-driven case studies and repurposed derivatives. v0.7 removes the LinkedIn polls lane introduced in v0.6 — polls moved to the new rockstarr-social plugin where they fit alongside other short-form social content. v0.5 added the strategic content-planning layer: seo-strategy outputs a canonical backlog of 25-32 prioritized blog topics organized into 4-5 pillar+supporting clusters; ideate-topics + content-calendar + outline-blog are backlog-aware. Researched-blog lane (v0.4) runs WebSearch research + 13-item SEO/GEO checklist as Pass 1 before stop-slop. Thought-leadership lane (v0.3) runs the canonical TL rubric as Pass 1 before stop-slop. Every lane drafts in the client's approved voice from first-party KB; third-party sources are cited inline and listed in References, never paraphrased as the client's voice. Requires rockstarr-infra v0.8.2+ for the shared blog-seo-geo reference; v0.8.1+ for the TL rubric; v0.4+ for the rest.",
-      "version": "0.7.0",
+      "description": "Rockstarr AI content plugin. Drafts researched blogs, thought-leadership, email and LinkedIn newsletters, case studies, and repurposed short-form in the client's approved voice, plus the SEO layer: keyword and cluster strategy and an impact-first site audit that feeds the content backlog. Every lane is cadence-gated in stack.md and routes through rockstarr-infra:approve. Drafting uses first-party knowledge only; third-party sources are cited inline, never paraphrased as the client's voice.",
+      "version": "0.9.0",
       "source": {
         "source": "url",
-        "url": "https://github.com/rockstarrmoon/rockstarr-plugins/releases/download/rockstarr-content-v0.7.0/null"
+        "url": "https://github.com/rockstarrmoon/rockstarr-plugins/releases/download/rockstarr-content-v0.9.0/null"
       }
     },
     {
